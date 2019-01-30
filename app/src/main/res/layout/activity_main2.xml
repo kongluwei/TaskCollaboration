@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <include layout="@layout/head_include_layout" />
+
+    <pdwy.com.taskcollaboration.utils.CustomScrollViewPager
+        android:id="@+id/vp_main2"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </pdwy.com.taskcollaboration.utils.CustomScrollViewPager>
+    <View
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="#DEDEDE"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_main2_x"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/tv_main_renwu"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务提醒"
+                android:textColor="#C6C6C6"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_main_fankui"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反馈信息" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_main_tongzhi"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon3"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textSize="10dp"
+                android:textColor="#C6C6C6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知公告" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="headOnClick"
+            android:id="@+id/tv_main_saoma"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon4"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描查询" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_personalcenter_1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon5"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

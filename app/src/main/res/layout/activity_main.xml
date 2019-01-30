@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <FrameLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/frame_textview"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+
+                <LinearLayout
+
+                    android:id="@+id/layout_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@mipmap/icon_search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="搜索"
+
+                        />
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_login"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="登录"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:id="@+id/ll_main_x"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/tv_main_renwu_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/index_img01" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/text_main_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="任务提醒"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/text_main_color_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:text="到期提醒，并分配代办事项。开始日期日期和结束日期、状态、具体实现等，提醒时间。"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:background="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/tv_main_fankui_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/index_img02" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/text_main_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="反馈信息"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/text_main_color_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:text="控制系统把信息输送出去，把其作用结果返送回来。起到制的作用，已到达预定的目的。"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:background="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/tv_main_tongzhi_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/index_img03" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/text_main_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="通知公告"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:textColor="@color/text_main_color_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:text="对重大的事件正式公布，公布公文、告示、启示等提示性内容的展示。"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:background="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/tv_main_saoma_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/index_img04" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/text_main_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="扫描查询"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:textColor="@color/text_main_color_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:text="应用程序提供快速的条码扫描，操作功能简单，使用手机中的摄像头扫描条码进行检索。"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:background="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/tv_main_renwu"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务提醒"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_main_fankui"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反馈信息" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_main_tongzhi"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon3"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知公告" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="headOnClick"
+            android:id="@+id/tv_main_saoma"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon4"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描查询" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_personalcenter"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@mipmap/foot_icon5"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="#C6C6C6"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

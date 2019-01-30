@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/head_include_layout" />
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_gg_bt"
+    android:textSize="20sp"
+    android:text="标题"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#B0B0B0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <View
+            android:background="#B0B0B0"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="3dp"
+                android:text="        测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。测试新版系统于2018年12月31号上线了，请大家做好使用新系统的准备。"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+        <View
+            android:background="#B0B0B0"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_marginBottom="100dp"
+        android:background="#B0B0B0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
+
+</LinearLayout>

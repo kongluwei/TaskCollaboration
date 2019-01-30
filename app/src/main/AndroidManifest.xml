@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pdwy.com.taskcollaboration">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity android:name=".LoginActivity" />
+
+        <!-- 个人中心页面 -->
+        <activity android:name=".activity.PersonalCenterActivity" />
+        <!-- 功能介绍页面 -->
+        <activity android:name=".activity.FunctionalIntroductionActivity" />
+        <!-- 版本信息页面 -->
+        <activity android:name=".activity.VersionInformationActivity" />
+        <!-- 提醒页面（处长） -->
+        <activity android:name=".activity.RemindCzActivity" />
+        <!-- 提醒页面（处长-待批准的报告） -->
+        <activity android:name=".activity.RemindCzBgActivity" />
+        <!-- 提醒页面（审查员） -->
+        <activity android:name=".activity.RemindScyActivity" />
+        <!-- 提醒页面（审查员-任务） -->
+        <activity android:name=".activity.RemindRwScyActivity" />
+        <!-- 提醒页面（审查员-报告） -->
+        <activity android:name=".activity.RemindBgScyActivity" />
+        <!-- 提醒页面（审查员繁才） -->
+        <activity android:name=".activity.RemindFcScyActivity" />
+        <!-- 提醒页面（副中心主任） -->
+        <activity android:name=".activity.RemindFzxzrActivity" />
+        <!-- 提醒页面（副中心主任-任务） -->
+        <activity android:name=".activity.RemindRwFzxzrActivity" />
+        <!-- 提醒页面（副中心主任-报告） -->
+        <activity android:name=".activity.RemindBgFzxzrActivity" />
+        <!-- 提醒页面（测试员） -->
+        <activity android:name=".activity.RemindCsyActivity" />
+        <!-- 提醒页面（测试员-任务） -->
+        <activity android:name=".activity.RemindRwCsyActivity" />
+        <!-- 提醒页面（测试员-报告） -->
+        <activity android:name=".activity.RemindBgCsyActivity" />
+        <!-- 提醒页面（分中心保藏员） -->
+        <activity android:name=".activity.RemindFzxbcyActivity" />
+        <!-- 提醒页面（分中心保藏员-繁才） -->
+        <activity android:name=".activity.RemindFzclFzxbcyActivity" />
+
+        <!-- 反馈页面 -->
+        <activity android:name=".activity.FeedbackActivity" />
+        <!-- 反馈列表页面 -->
+        <activity android:name=".activity.FeedbackListActivity" />
+        <!-- 通知页面 -->
+        <activity android:name=".activity.NoticeActivity" />
+        <!-- 通知详情页面 -->
+        <activity android:name=".activity.NoticeGgXqActivity" />
+        <!-- 扫描页面 -->
+        <activity android:name=".activity.ScanningActivity" />
+        <!-- 扫描页面 (扫码内容详细-申请码) -->
+        <activity android:name=".activity.ScanQuerySqmActivity" />
+        <!-- 扫描页面 (繁殖材料提交码) -->
+        <activity android:name=".activity.ScanQueryTjmActivity" />
+        <!-- 扫描页面 (测试编码-总中心及分中心委托) -->
+        <activity android:name=".activity.ScanQueryCsbmZFzxActivity" />
+        <!-- 扫描页面 (测试编码-分中心（总中心任务）) -->
+        <activity android:name=".activity.ScanQueryCsbmFzxZzxrwActivity" />
+        <!-- 扫描页面 (田间试验编码) -->
+        <activity android:name=".activity.ScanQueryTjsybmActivity" />
+        <!-- 扫描页面 (保藏编号-总中心) -->
+        <activity android:name=".activity.ScanQueryBcbhZzxActivity" />
+        <!-- 扫描页面 (保藏编号-保藏员) -->
+        <activity android:name=".activity.ScanQueryBcbhBcyActivity" />
+        <!-- 扫描页面 (保藏编号-测试员) -->
+        <activity android:name=".activity.ScanQueryBcbhCsyActivity" />
+        <activity android:name=".activity.Main2Activity"></activity>
+    </application>
+
+</manifest>
