@@ -16,10 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
         <LinearLayout
+            android:id="@+id/ll_main_ed"
             android:layout_marginTop="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="28dp">
+            android:layout_height="50dp">
 
             <FrameLayout
                 android:paddingLeft="10dp"

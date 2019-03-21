@@ -99,7 +99,13 @@ public class LoginActivity extends BaseActivity {
 
     }
     int signInAsynchronous(){
-        if("admin".equals(tv_pwawrod.getText().toString())){
+        if("admin".equals(tv_pwawrod.getText().toString())&&("admin0".equals(tv_username.getText().toString())||
+                "admin1".equals(tv_username.getText().toString())||
+                "admin2".equals(tv_username.getText().toString())||
+                "admin3".equals(tv_username.getText().toString())||
+                "admin4".equals(tv_username.getText().toString())
+
+        )){
             return 1;
         }
         else{

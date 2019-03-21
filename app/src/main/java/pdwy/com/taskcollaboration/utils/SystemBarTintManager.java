@@ -41,7 +41,7 @@ package pdwy.com.taskcollaboration.utils;
 /**
  * Class to manage status and navigation bar tint effects when using KitKat
  * translucent system UI modes.
- *
+ * 实现沉浸式所需
  */
 public class SystemBarTintManager {
 

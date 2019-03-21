@@ -1,69 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="2dp"
-    >
-<LinearLayout
-    android:id="@+id/ll_cz_0"
-   android:layout_marginTop="8dp"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_marginRight="5dp"
-        android:layout_gravity="center"
-        android:background="@mipmap/list_arr"
-        android:layout_marginLeft="10dp"
-        android:layout_width="20dp"
-        android:layout_height="10dp" />
-
-    <LinearLayout
-
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_cz_0_0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="您有5个报告待审批" />
-
-        <TextView
-            android:id="@+id/tv_cz_0_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="2018-07-25"
-            android:textSize="10dp" />
-    </LinearLayout>
-<TextView
-    android:id="@+id/tv_hongdian"
-    android:textColor="#fff"
-    android:background="@drawable/filled_circle"
-    android:text="9"
-    android:textSize="10dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="10dp"
-    android:gravity="center"
-    android:layout_width="20dp"
-    android:layout_height="20dp" />
-</LinearLayout>
-    <View
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="#E0E0E0"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-</LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_sc"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

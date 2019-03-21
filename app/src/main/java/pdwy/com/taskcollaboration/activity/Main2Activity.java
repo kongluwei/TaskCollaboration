@@ -207,16 +207,20 @@ public class Main2Activity extends BaseActivity {
                 list.add(new RemindCzActivity());
                 break;
             case "审查员":
-                list.add(new RemindScyActivity());
+                list.add(new RemindCzActivity());
+//                list.add(new RemindScyActivity());
                 break;
             case "分中心主任":
-                list.add(new RemindFzxzrActivity());
+                list.add(new RemindCzActivity());
+//                list.add(new RemindFzxzrActivity());
                 break;
             case "测试员":
-                list.add(new RemindCsyActivity());
+                list.add(new RemindCzActivity());
+//                list.add(new RemindCsyActivity());
                 break;
             case "分中心保藏员":
-                list.add(new RemindFzxbcyActivity());
+                list.add(new RemindCzActivity());
+//                list.add(new RemindFzxbcyActivity());
                 break;
                 //未登录时必须默认添加一个
             case "":

@@ -1,6 +1,7 @@
 package pdwy.com.taskcollaboration.activity;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,10 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.scwang.smartrefresh.header.MaterialHeader;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,12 +39,39 @@ public class NoticeActivity extends Fragment {
 
         View view = inflater.inflate(R.layout.activity_notice, container, false);
         lv_cz=view.findViewById(R.id.lv_cz);
+
+        RefreshLayout refreshLayout = (RefreshLayout)view.findViewById(R.id.refreshLayout);
+        refreshLayout.setEnableLoadMore(true);//是否启用上拉加载功能
+        //设置 Header 为 贝塞尔雷达 样式
+        refreshLayout.setRefreshHeader(new MaterialHeader(getContext()));
+        refreshLayout.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void onRefresh(@NonNull final RefreshLayout refreshLayout) {
+
+                new Thread(){
+                    @Override
+                    public void run() {
+                        try {
+                            sleep(5000);
+
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        refreshLayout.finishRefresh();
+                    }
+                }.start();
+
+            }
+        });
         onCreateAfter();
         return view;
     }
 
 
     protected void onCreateAfter() {
+
+
+
 
 final List<NoticeGgXq> list=new ArrayList<>();
         NoticeAdapter noticeAdapter=new NoticeAdapter(getActivity(),list);

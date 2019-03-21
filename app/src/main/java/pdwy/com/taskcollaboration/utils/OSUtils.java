@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 
 /**
  * Author： by MR on 2018/10/25.
+ *Rom类型判断的工具类
  */
 
 public class OSUtils {

@@ -7,6 +7,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +24,8 @@ public class FeedbackListActivity extends BaseActivity {
     @BindView(R.id.tv_head_title)
     TextView tv_head_title;
 
+    @BindView(R.id.refreshLayout)
+    RefreshLayout refreshLayout;
     @BindView(R.id.ll_head_personalcenter)
     LinearLayout ll_head_personalcenter;
     @BindView(R.id.lv_fk)
@@ -33,6 +37,11 @@ public class FeedbackListActivity extends BaseActivity {
 
     @Override
     protected void onCreateAfter() {
+
+        refreshLayout.setEnableRefresh(false);//是否启用下拉刷新功能
+        refreshLayout.setEnableLoadMore(true);//是否启用上拉加载功能
+
+
         ll_head_return.setVisibility(View.VISIBLE);
         ll_head_personalcenter.setVisibility(View.INVISIBLE);
         tv_head_title.setVisibility(View.VISIBLE);

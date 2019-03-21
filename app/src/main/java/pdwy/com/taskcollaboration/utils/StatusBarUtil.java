@@ -19,6 +19,7 @@ import java.lang.reflect.Method;
 
 /**
  * Author： by MR on 2018/10/25.
+ * 状态栏沉浸式工具类
  */
 
 public class StatusBarUtil {

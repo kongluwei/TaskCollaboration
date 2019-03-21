@@ -11,9 +11,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.TranslateAnimation;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,8 +36,12 @@ import pdwy.com.taskcollaboration.activity.NoticeGgXqActivity;
 import pdwy.com.taskcollaboration.activity.ScanningActivity;
 import pdwy.com.taskcollaboration.core.BaseActivity;
 import pdwy.com.taskcollaboration.utils.SharePreferencesUtils;
+import pdwy.com.taskcollaboration.utils.StatusBarUtil;
 
 public class MainActivity extends BaseActivity implements OnBannerListener {
+
+    @BindView(R.id.ll_main_ed)
+    LinearLayout ll_main_ed;
     @BindView(R.id.et_search)
     EditText mEtSearch;
     @BindView(R.id.layout_default)
@@ -69,6 +76,19 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
 //            finish();
 //            return;
 //        }
+
+//        TranslateAnimation animation = new TranslateAnimation(0,0,0,StatusBarUtil.getStatusBarHeight(this));
+//
+//        animation.setFillAfter(true);
+//        ll_main_ed.startAnimation(animation);
+
+        //取消顶部缩进
+        ViewGroup view= (ViewGroup) ((ViewGroup)findViewById(android.R.id.content)).getChildAt(0);
+        View viewGroup=view.getChildAt(0);
+        viewGroup.setPadding(0,0,0,0);
+
+        // 输入框和顶部保存距离 实现图片沉浸式
+        ll_main_ed.setPadding(0,StatusBarUtil.getStatusBarHeight(this),0,0);
         if(!"".equals(SharePreferencesUtils.getString(getString(R.string.user_identity),""))){
             tv_login.setVisibility(View.GONE);
         }
@@ -127,6 +147,8 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
                 break;
                 //通知公告
             case  R.id.tv_main_tongzhi_1:
+
+
             case R.id.tv_main_tongzhi:
 
 //                startActivity(NoticeActivity.class,false);
